@@ -1,0 +1,14 @@
+{
+    "name": "mitajunior/workflow",
+    "description": "Laravel workflow automation engine",
+    "type": "library, laravel, workflow",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cliff Oscar Mitamita",
+            "email": "mitacliff@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
