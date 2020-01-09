@@ -1,6 +1,8 @@
 <?php
 
-namespace MitaJunior;
+namespace MitaJunior\Workflow;
+
+use Illuminate\Support\Collection;
 
 class Workflow {
 

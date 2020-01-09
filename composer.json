@@ -1,7 +1,7 @@
 {
     "name": "mitajunior/workflow",
     "description": "Laravel workflow automation engine",
-    "type": "library, laravel, workflow",
+    "keywords": ["workflow", "automation", "tasks", "laravel", "laravel5", "laravel6"],
     "license": "MIT",
     "authors": [
         {
@@ -10,5 +10,17 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "mitajunior\\workflow\\WorkflowServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "MitaJunior\\Workflow\\": "src/"
+        }
+    }
 }
