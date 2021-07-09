@@ -1,6 +1,6 @@
 <?php
 
-namespace MitaJunior\Workflow\Tasks;
+namespace Clipsmm\Workflow\Tasks;
 
 class MoveToTask {
 

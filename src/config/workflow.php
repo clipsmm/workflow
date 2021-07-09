@@ -13,8 +13,14 @@ return [
     // default auth class
     'auth_class' => User::class,
 
-    /*
-     *  Enable roles
+    /**
+     * Workflow types
+     * example: ['name' => 'Test', 'class' => EntityClass::class]
+     */
+    'types' => [],
+
+    /**
+     * Enable roles or not
      */
     'role_class' => null,
 
@@ -32,7 +38,7 @@ return [
 
 
     // settings group
-    'workflow_group' => function() {
+    'workflow_group' => function () {
         return 'default';
     }
 ];

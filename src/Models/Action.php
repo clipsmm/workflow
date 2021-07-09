@@ -1,8 +1,9 @@
 <?php
 
-namespace MitaJunior\Workflow\Models;
+namespace Clipsmm\Workflow\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Action extends Model {
 
@@ -10,12 +11,12 @@ class Action extends Model {
 
     protected $guarded = [];
 
-    public function stage()
+    public function stage(): BelongsTo
     {
         return $this->belongsTo(Stage::class);
     }
 
-    public function next_stage()
+    public function next_stage(): BelongsTo
     {
         return $this->belongsTo(Stage::class, 'next_stage_id');
     }

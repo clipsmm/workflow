@@ -1,6 +1,6 @@
 <?php
 
-namespace MitaJunior\Workflow;
+namespace Clipsmm\Workflow;
 
 
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -8,7 +8,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 class WorkflowServiceProvider extends ServiceProvider
 {
 
-    public function boot()
+    public function boot(): void
     {
         $this->mergeConfigFrom(
             __DIR__ . '/config/workflow.php',
@@ -39,10 +39,5 @@ class WorkflowServiceProvider extends ServiceProvider
         ], ['workflow', 'config']);
 
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-    }
-
-    public function register()
-    {
-        parent::register();
     }
 }

@@ -1,21 +1,22 @@
 <?php
 
-namespace MitaJunior\Workflow\Models;
+namespace Clipsmm\Workflow\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Collection;
 
 class Workflow extends Model {
 
     protected $table = 'm_workflows';
 
-    protected $fillable = ['name', 'type', 'description'];
+    protected $guarded = [];
 
     protected $casts = [
         'active' => "boolean"
     ];
 
-    public function stages()
+    public function stages(): HasMany
     {
         return $this->hasMany(Stage::class, 'workflow_id');
     }

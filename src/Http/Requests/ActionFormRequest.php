@@ -1,6 +1,6 @@
 <?php
 
-namespace MitaJunior\Workflow\Http\Requests;
+namespace Clipsmm\Workflow\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

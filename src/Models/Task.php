@@ -1,6 +1,6 @@
 <?php
 
-namespace MitaJunior\Workflow\Models;
+namespace Clipsmm\Workflow\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

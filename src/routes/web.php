@@ -3,9 +3,12 @@
 Route::group([
     'prefix' => config('workflow.url'),
     'as' => 'workflow::',
-    'namespace' => "MitaJunior\Workflow\Http\Controllers",
+    'namespace' => "Clipsmm\Workflow\Http\Controllers",
     'middleware' => array_merge(['web'], config('workflow.middleware', []))
 ], function () {
+    Route::get('', function(){
+        return redirect()->route('workflow::workflows.index');
+    })->name('index');
     Route::group(['prefix' => 'workflows', 'as' => 'workflows.'], function(){
         Route::get('', 'WorkflowController@index')->name('index');
         Route::post('', 'WorkflowController@store')->name('store');

@@ -14,7 +14,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "mitajunior\\workflow\\WorkflowServiceProvider"
+                "clipsmm\\workflow\\WorkflowServiceProvider"
             ]
         }
     },

@@ -6,7 +6,7 @@
             <div class="float-right">
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                    New Workflow
+                    New Workflowddd
                 </button>
 
                 <!-- Modal -->
@@ -19,7 +19,7 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <workflow-form submit-url="" :types="{{ json_encode($types) }}"></workflow-form>
+                            <workflow-form submit-url="{{ route('workflow:workflows.store') }}" :types="{{ json_encode($types) }}"></workflow-form>
                         </div>
                     </div>
                 </div>

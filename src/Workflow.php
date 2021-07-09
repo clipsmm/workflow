@@ -1,6 +1,6 @@
 <?php
 
-namespace MitaJunior\Workflow;
+namespace Clipsmm\Workflow;
 
 use Illuminate\Support\Collection;
 

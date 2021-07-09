@@ -1,12 +1,12 @@
 <?php
 
-namespace MitaJunior\Workflow\Http\Controllers;
+namespace Clipsmm\Workflow\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use MitaJunior\Workflow\Http\Requests\WorkflowFormRequest;
-use MitaJunior\Workflow\Models\Workflow;
+use Clipsmm\Workflow\Http\Requests\WorkflowFormRequest;
+use Clipsmm\Workflow\Models\Workflow;
 
 class WorkflowController extends Controller {
 

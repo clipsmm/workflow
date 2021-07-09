@@ -1,16 +1,16 @@
 <?php
 
-namespace MitaJunior\Workflow\Http\Controllers;
+namespace Clipsmm\Workflow\Http\Controllers;
 
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use MitaJunior\Workflow\Http\Requests\ActionFormRequest;
-use MitaJunior\Workflow\Http\Requests\StageFormRequest;
-use MitaJunior\Workflow\Http\Requests\WorkflowFormRequest;
-use MitaJunior\Workflow\Models\Action;
-use MitaJunior\Workflow\Models\Stage;
-use MitaJunior\Workflow\Models\Workflow;
+use Clipsmm\Workflow\Http\Requests\ActionFormRequest;
+use Clipsmm\Workflow\Http\Requests\StageFormRequest;
+use Clipsmm\Workflow\Http\Requests\WorkflowFormRequest;
+use Clipsmm\Workflow\Models\Action;
+use Clipsmm\Workflow\Models\Stage;
+use Clipsmm\Workflow\Models\Workflow;
 
 class ActionController extends Controller {
 

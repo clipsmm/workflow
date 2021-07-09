@@ -6,4 +6,4 @@ Vue.component('workflow-form', require('./components/WorkflowForm').default);
 Vue.component('stage-form', require('./components/StageForm').default);
 Vue.component('action-form', require('./components/ActionForm').default);
 
-window.MitaJuniorWorkflow = new Vue();
+window.ClipsmmWorkflow = new Vue();
